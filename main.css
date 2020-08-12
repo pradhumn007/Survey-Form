@@ -1,0 +1,88 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+body {
+  margin: 0rem;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#contain {
+  width: 50%;
+  margin-top: 3.125rem;
+  padding: 0rem;
+}
+
+#contain header {
+  color: white;
+}
+
+#contain header #title {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+#contain header #description {
+  font-style: italic;
+  font-weight: 200;
+}
+
+#contain form {
+  background-color: rgba(27, 27, 50, 0.8);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+#contain form label {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+#contain form p {
+  color: white;
+  margin: 0;
+}
+
+#contain form .form-group .input-textarea {
+  width: 100%;
+  height: 15vh;
+}
+
+#contain form .form-group .submit-button {
+  background-color: #37af65;
+  padding: 0.7rem;
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  border-style: none;
+}
+
+@media (max-width: 1024px) {
+  #contain {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  #contain {
+    width: 100%;
+  }
+}
